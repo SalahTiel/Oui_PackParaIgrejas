@@ -1,0 +1,568 @@
+:root{
+    --one:#95FF00;
+    --two: #000FA0;
+    --white: #efefef;
+
+    --container: 10vh 10vw;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html, body{
+    overflow-x: hidden;
+    background-color: var(--white);
+}
+
+
+
+section.home{
+    height: 110vh;
+    padding: 5vh 10vw 10vh 10vw;
+    background: url(assets/img-background.png);
+    background-size: cover;
+    background-position: center;
+}
+section.home div.logo{
+    position: absolute;
+    left: 10vw;
+    top: 2vh;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+section.home div.logo img{
+    width: 2.5rem;
+}
+section.home div.logo p{
+    font: 700 1rem 'Montserrat';
+    color: var(--one);
+}
+section.home div.text{
+    width: 100%;
+}
+section.home div.text h1{
+    font: 700 2rem 'Poppins';
+    text-align: center;
+    color: var(--white);
+    margin-top: 5vh;
+}
+section.home div.text h1 span{
+    color: var(--one);
+}
+section.home div.text h3.legend{
+    font: 400 1rem 'Poppins';
+    text-align: center;
+    color: var(--white);
+    margin-top: 2vh;
+}
+section.home div.text a{
+    display: block;
+    width: 80%;
+    padding: 0.5rem;
+    margin-inline: auto;
+    border-radius: 10px;
+    font: 700 1.2rem 'Poppins';
+    text-align: center;
+    background-color: var(--one);
+    color: var(--two);
+    margin-top: 2vh;
+}
+section.home div.text a:hover{
+    background-color: var(--two);
+    color: var(--one);
+    transition: all 300ms;
+}
+section.home div.text div.icons{
+    display: flex;
+    margin-top: 2vh;
+    justify-content: space-between;
+}
+section.home div.text div.icons div.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section.home div.text div.icons div.item img{
+    width: 2rem;
+}
+section.home div.text div.icons div.item p{
+    font: 400 0.8rem 'Poppins';
+    margin-top: 0.5rem;
+    text-align: center;
+    color: var(--white);
+}
+section.home img.image{
+    width: 100%;
+    display: block;
+    margin-inline: auto;
+    margin-top: 2vh;
+    transform: scaleX(-1);
+}
+
+
+
+section.aboutPack{
+    padding: var(--container);
+}
+
+section.aboutPack div.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section.aboutPack div.wrapper div.text h2{
+    font: 700 1.5rem 'Poppins';
+    color: var(--two);
+    text-align: center;
+}
+section.aboutPack div.wrapper div.text p{
+    font: 400 1rem 'Poppins';
+    color: black;
+    margin-top: 2vh;
+}
+section.aboutPack div.wrapper div.text p span{
+    color: var(--two);
+    font-weight: 700;
+}
+section.aboutPack div.wrapper div.carousel-box{
+    width: 80vw;
+}
+section.aboutPack div.wrapper div.carousel{
+    display: flex;
+    width: fit-content;
+    overflow: hidden;
+    gap: 4vw;
+    margin-top: 5vh;
+    animation: carousel 15s infinite ease;
+}
+section.aboutPack div.wrapper div.carousel:hover{
+    animation-play-state: paused ;
+}
+section.aboutPack div.wrapper div.carousel img{
+    width: 38vw;
+    border-radius: 5px;
+}
+
+
+
+
+div.strip{
+    display: flex;
+    width: max-content;
+    gap: 1rem;
+    align-items: center;
+    background-color: var(--one);
+    padding-block: 0.5rem;
+    animation: strip 25s linear infinite;
+}
+div.strip p{
+    width: 6rem;
+    font: 700 0.8rem 'Poppins';
+    color: var(--two);
+    text-align: center;
+}
+div.strip img{
+    width: 1rem;
+    height: 1rem;
+}
+
+
+
+
+section.portfolio{
+    padding: var(--container);
+    background-color: var(--two);
+}
+section.portfolio h2{
+    font: 700 1.5rem 'Poppins';
+    color: var(--one);
+    text-align: center;
+}
+section.portfolio h3{
+    font: 700 1rem 'Poppins';
+    color: var(--white);
+    text-align: center;
+    margin: 2vh 0 3vh;
+}
+section.portfolio div.carousel-box{
+    width: 100%;
+    overflow: hidden;
+    border-radius: 5px;
+    margin-top: 2vh;
+}
+section.portfolio div.carousel-box div.carousel{
+    display: flex;
+    width: fit-content;
+    gap: 2.5vw;
+    flex-wrap: nowrap;
+    animation: carousel2 20s linear infinite;
+}
+section.portfolio div.carousel-box div.carousel:hover{
+    animation-play-state: paused;
+}
+section.portfolio div.carousel-box div.carousel img{
+    width: 25vw;
+    border-radius: 10px;
+}
+section.portfolio a{
+    display: block;
+    width: 80%;
+    padding: 0.5rem;
+    margin-inline: auto;
+    border-radius: 10px;
+    font: 700 1.2rem 'Poppins';
+    text-align: center;
+    background-color: var(--one);
+    color: var(--two);
+    margin-top: 5vh;
+}
+section.portfolio a:hover{
+    background-color: var(--two);
+    color: var(--one);
+    transition: all 300ms;
+    box-shadow: inset 0px 0px 0px 2px var(--one);
+}
+
+
+section.packContent{
+    padding: var(--container);
+}
+section.packContent h2{
+    font: 700 1.5rem 'Poppins';
+    color: var(--two);
+    text-align: center;
+}
+section.packContent div.wrapper{
+    padding: 2rem;
+    border-radius: 15px;
+    background-color: var(--two);
+}
+section.packContent div.wrapper h2{
+    font-size: 1.2rem;
+    color: var(--one);
+}
+section.packContent div.wrapper p.paragraph{
+    font: 400 1rem 'Poppins';
+    color: var(--white);
+    text-align: center;
+    margin-top: 2vh;
+}
+section.packContent div.wrapper div.icons div.item{
+    margin-top: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+section.packContent div.wrapper div.icons div.item img{
+    width: 2rem;
+    height: fit-content;
+}
+section.packContent div.wrapper div.icons div.item p{
+    font: 400 1rem 'Poppins';
+    color: var(--white);
+}
+section.packContent div.wrapper a{
+    display: block;
+    width: 100%;
+    margin-top: 2vh;
+    margin-inline: auto;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font: 700 1rem 'Poppins';
+    text-align: center;
+    color: var(--two);
+    background-color: var(--one);
+}
+section.packContent div.wrapper a:hover{
+    background-color: var(--two);
+    color: var(--one);
+    box-shadow: inset 0px 0px 0px 2px var(--one);
+    transition: all 300ms;
+}
+section.packContent h3{
+    margin-top: 5vh;
+    font: 700 1.2rem 'Poppins';
+    color: var(--two);
+    text-align: center;
+}
+section.packContent div.listBox{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5vh;
+}
+section.packContent div.listBox div.list div.item{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    background: rgb(246,246,246);
+    background: linear-gradient(90deg, rgb(226, 226, 226) 0%, rgb(218, 218, 218) 100%);
+}
+section.packContent div.listBox div.list div.item img{
+    width: 1.5rem;
+}
+section.packContent div.listBox div.list div.item p{
+    font: 400 0.8rem 'Poppins';
+    color: black;
+}
+
+
+
+section.offer{
+    padding: var(--container);
+    background-color: var(--two);
+}
+section.offer h2{
+    font: 700 1.5rem 'Poppins';
+    text-align: center;
+    color: var(--one);
+}
+section.offer div.wrapper{
+    width: 100%;
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: var(--white);
+    margin-top: 2vh;
+}
+section.offer div.wrapper p{
+    font: 400 1rem 'Poppins';
+    color: var(--two);
+    text-align: center;
+}
+section.offer div.wrapper p.oldprice{
+    color: gray;
+}
+section.offer div.wrapper p.oldprice span{
+    text-decoration: line-through;
+}
+section.offer div.wrapper p.price{
+    font-size:3.5rem;
+    font-weight: 700;
+}
+section.offer div.wrapper ul{
+    margin-left: 2rem;
+}
+section.offer div.wrapper ul li{
+    font: 700 0.8rem 'Poppins';
+    color: black;
+    margin-top: 0.5rem;
+}
+section.offer div.wrapper ul li.bonus{
+    color: var(--two);
+    font-weight: 700;
+}
+section.offer div.wrapper a{
+    display: block;
+    width: 100%;
+    margin-top: 2vh;
+    margin-inline: auto;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font: 700 1rem 'Poppins';
+    text-align: center;
+    color: var(--two);
+    background-color: var(--one);
+}
+section.offer div.wrapper a:hover{
+    background-color: var(--two);
+    color: var(--one);
+    transition: all 300ms;
+}
+
+
+
+section.team{
+    padding: var(--container);
+}
+section.team h2{
+    font: 700 1.5rem 'Poppins';
+    color: var(--two);
+    text-align: center;
+}
+section.team div.wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    margin-top: 2vh;
+}
+section.team div.wrapper div.item{
+    padding: 2rem;
+    width: 100%;
+    border-radius: 15px;
+    background: rgb(246,246,246);
+    background: linear-gradient(90deg, rgb(226, 226, 226) 0%, rgb(207, 207, 207) 100%);
+}
+section.team div.wrapper div.item img{
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 100px;
+    margin-inline: auto;
+    border: 2px solid var(--one);
+}
+section.team div.wrapper div.item p.name{
+    font: 700 1rem 'Poppins';
+    color: var(--two);
+    text-align: center;
+    margin-top: 1vh;
+}
+section.team div.wrapper div.item p.tag{
+    font: 400 1rem 'Poppins';
+    color: black;
+    text-align: center;
+}
+section.team div.wrapper div.item p.description{
+    font: 400 0.8rem 'Poppins';
+    color: rgb(77, 77, 77);
+    text-align: justify;
+}
+
+
+
+section.FAQ{
+    display: flex;
+    flex-direction: column;
+    padding: var(--container);
+    background-color: var(--white);
+
+}
+section.FAQ div.text p.legend{
+    font: 700 1.5rem 'Poppins';
+    color: var(--two);
+    border-left: 4px solid var(--two);
+    padding-left: 4px;
+}
+section.FAQ div.text h3{
+    font: 700 1rem 'Poppins';
+    color: black;
+    margin-top: 2vh;
+}
+section.FAQ details{
+    margin-top: 1.2rem;
+    border-bottom: 1px solid black;
+    padding-bottom: 1.2rem;
+    text-align: left;
+}
+section.FAQ details summary{
+    font: 700 1rem 'Poppins';;
+    color: var(--two);
+    display: flex;
+    justify-content: space-between;
+}
+section.FAQ details p{
+    font: 400 0.8rem 'Poppins';
+}
+
+section.FAQ details summary:hover{
+    color: var(--one);
+    transition: color 300ms;
+}
+section.FAQ details summary::marker{
+    content: "";
+    font-size: 0;
+    color: transparent;
+    opacity: 0;
+}
+section.FA1 details summary::after{
+    content: "";
+    font-size: 0;
+    color: transparent;
+    opacity: 0;
+}
+section.FAQ details summary span::after{
+    content: '+';
+}
+section.FAQ details[open] summary span::after{
+    content: "-";
+}
+section.FAQ details p{
+    color: black;
+    margin-top: 0.5rem;
+}
+
+
+
+footer{
+    padding: var(--container);
+    background-color: var(--two);
+    display: flex;
+    flex-direction: column;
+}
+footer div.brand{
+    display: flex;
+    flex-direction: column;
+}
+footer div.brand div.logo{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+footer div.brand div.logo img{
+    width: 3rem;
+}
+footer div.brand div.logo p{
+    color: var(--one);
+    font: 700 0.8rem 'Montserrat';
+}
+footer a{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-left: 0.5rem;
+    margin-top: 2vh;
+}
+footer a img{
+    width: 1.5rem;
+}
+footer a p{
+    color: var(--one);
+    font: 400 0.8rem 'Poppins';
+}
+footer a p span{
+    font-weight: 700
+}
+footer div.links h3{
+    font: 700 1rem 'Poppins';
+    margin-left: 0.5rem;
+    color: var(--one);
+    margin-top: 5vh;
+}
+footer div.links div.wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+footer div.links div.wrapper a img{
+    width: 2rem;
+}
+footer div.links div.wrapper a p{
+    display: none;
+}
+
+
+
+@keyframes strip {
+    0%{transform: translate(calc((8rem + 1rem) * (-1)));}
+    100%{transform: translate(calc((8rem + 1rem) * (-15)));}
+}
+@keyframes carousel{
+    0%{transform: translate(calc((38vw + 4vw) * (-1)));}
+    20%{transform: translate(calc((38vw + 4vw) * (-3)));}
+    40%{transform: translate(calc((38vw + 4vw) * (-5)));}
+    60%{transform: translate(calc((38vw + 4vw) * (-7)));}
+    80%{transform: translate(calc((38vw + 4vw) * (-9)));}
+    100%{transform: translate(calc((38vw + 4vw) * (-11)));}
+}
+
+@keyframes carousel2 {
+    0%{transform: translate(calc((25vw + 2.5vw) * (-1)));}
+    100%{transform: translate(calc((25vw + 2.5vw) * (-11)));}
+}

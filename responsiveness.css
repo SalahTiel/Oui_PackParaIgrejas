@@ -1,0 +1,193 @@
+@media screen and (min-width: 1280px){
+    :root{
+        --container: 10vh 15vw;
+    }
+
+
+
+    section.home{
+        display: flex;
+        justify-content: space-between;
+        padding: 10% 15vw;
+    }
+    section.home div.logo{
+        left: 15vw;
+    }
+    section.home div.text{
+        width: 50%;
+    }
+    section.home div.text h1{
+        text-align: left;
+        font-size: 3rem;
+    }
+    section.home div.text h3.legend{
+        text-align: left;
+        font-size: 2rem;
+    }
+    section.home div.text a{
+        margin: 2vh 0 0;
+        width: 70%;
+        padding: 1rem 0;
+    }
+    section.home div.text div.icons{
+        width: 70%;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+    section.home div.text div.icons div.item{
+        width: 30%;
+        flex-direction: row;
+        gap: 0.5rem;
+        align-items: center;
+    }
+    section.home div.text div.icons div.item p{
+        text-align: left;
+    
+        margin-top: 0;
+    } 
+    section.home img.image{
+        width: 40%;
+        height: fit-content;
+        position: absolute;
+        right: 10vw;
+        top: 50%;
+        transform: translateY(-50%) scaleX(-1);
+    }
+
+
+
+    section.aboutPack div.wrapper{
+        flex-direction: row;
+        gap: 4vw;
+    }
+    section.aboutPack div.wrapper div.text{
+        width: 33vw;
+    }
+    section.aboutPack div.wrapper div.text h2{
+        text-align: left;
+    }
+    section.aboutPack div.wrapper div.carousel-box{
+        overflow: hidden;
+        width: 33vw;
+    }
+    section.aboutPack div.wrapper div.carousel{
+        display: flex;
+        overflow: hidden;
+        gap: 3vw;
+        margin-top: 0;
+        animation: carousel 20s infinite ease;
+    }
+    section.aboutPack div.wrapper div.carousel:hover{
+        animation-play-state: paused ;
+    }
+    section.aboutPack div.wrapper div.carousel img{
+        width: 15vw;
+        border-radius: 5px;
+    }
+    @keyframes carousel {
+        0%{transform: translate(calc((15vw + 3vw) * (-1)));}
+        10%{transform: translate(calc((15vw + 3vw) * (-2)));}
+        20%{transform: translate(calc((15vw + 3vw) * (-3)));}
+        30%{transform: translate(calc((15vw + 3vw) * (-4)));}
+        40%{transform: translate(calc((15vw + 3vw) * (-5)));}
+        50%{transform: translate(calc((15vw + 3vw) * (-6)));}
+        60%{transform: translate(calc((15vw + 3vw) * (-7)));}
+        70%{transform: translate(calc((15vw + 3vw) * (-8)));}
+        80%{transform: translate(calc((15vw + 3vw) * (-9)));}
+        90%{transform: translate(calc((15vw + 3vw) * (-10)));}
+        100%{transform: translate(calc((15vw + 3vw) * (-11)));}
+    }
+
+
+
+    section.portfolio a{
+        width: 30%;
+    }
+    section.portfolio div.carousel-box div.carousel{
+        gap: 1vw;
+    }
+    section.portfolio div.carousel-box div.carousel img{
+        width: 12vw;
+    }
+    @keyframes carousel2 {
+        0%{transform: translate(calc((12vw + 1vw) * (-1)));}
+        100%{transform: translate(calc((12vw + 1vw) * (-11)));}
+    }
+
+
+
+    section.packContent div.wrapper{
+        padding: 5rem;
+    }
+    section.packContent div.wrapper a{
+        width: 50%;
+    }
+
+
+
+    section.packContent div.listBox{
+        gap: 2.5vw;
+        flex-direction: row;
+        justify-content: center;
+    }
+    section.packContent div.listBox div.list{
+        width: 50%;
+    }
+
+
+
+    section.offer div.wrapper{
+        width: 40vw;
+        margin-inline: auto;
+        padding: 2rem;
+    }
+    section.offer div.wrapper ul{
+        column-count: 3;
+        margin: 2vh auto 0;
+        list-style: none;
+    }
+    section.offer div.wrapper ul li{
+        margin: 0 0 0.5rem;
+    }
+    section.offer div.wrapper p.price{
+        font-size: 4.5rem;
+    }
+
+
+
+    section.team div.wrapper{
+        gap: 0;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    section.team div.wrapper div.item{
+        width: 32%;
+    }
+
+
+
+    section.FAQ{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    section.FAQ div.questions{
+        width: 50%;
+    }
+
+
+
+    footer{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: start;
+    }
+    footer div.links div.wrapper{
+        flex-direction: column;
+    }
+    footer div.links h3{
+        margin-top: 0.5rem;
+    }
+    footer div.links div.wrapper a p{
+        display: block;
+    }
+}
