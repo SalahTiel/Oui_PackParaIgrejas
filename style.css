@@ -101,7 +101,6 @@ section.home img.image{
     display: block;
     margin-inline: auto;
     margin-top: 2vh;
-    transform: scaleX(-1);
 }
 
 
@@ -232,25 +231,27 @@ section.portfolio a:hover{
 section.packContent{
     padding: var(--container);
 }
-section.packContent h2{
-    font: 700 1.5rem 'Poppins';
-    color: var(--two);
-    text-align: center;
-}
 section.packContent div.wrapper{
     padding: 2rem;
     border-radius: 15px;
     background-color: var(--two);
 }
 section.packContent div.wrapper h2{
-    font-size: 1.2rem;
+    font: 700 2rem 'Poppins';
+    text-align: center;
     color: var(--one);
+    display: block;
+    margin-inline: auto;
 }
 section.packContent div.wrapper p.paragraph{
     font: 400 1rem 'Poppins';
     color: var(--white);
     text-align: center;
     margin-top: 2vh;
+}
+section.packContent div.wrapper div.icons{
+    display: flex;
+    flex-direction: column;
 }
 section.packContent div.wrapper div.icons div.item{
     margin-top: 2vh;

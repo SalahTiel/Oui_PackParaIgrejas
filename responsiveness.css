@@ -51,7 +51,7 @@
         position: absolute;
         right: 10vw;
         top: 50%;
-        transform: translateY(-50%) scaleX(-1);
+        transform: translateY(-50%);
     }
 
 
@@ -119,12 +119,17 @@
     section.packContent div.wrapper{
         padding: 5rem;
     }
+    section.packContent div.wrapper h2{
+        width: 60%;
+    }
+    section.packContent div.wrapper div.icons{
+        flex-direction: row;
+        gap: 1rem;
+        justify-content: center;
+    }
     section.packContent div.wrapper a{
         width: 50%;
     }
-
-
-
     section.packContent div.listBox{
         gap: 2.5vw;
         flex-direction: row;
