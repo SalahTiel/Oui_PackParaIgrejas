@@ -262,7 +262,7 @@ section.packContent div.wrapper div.icons div.item{
 }
 section.packContent div.wrapper div.icons div.item img{
     width: 2rem;
-    height: fit-content;
+    height: 2rem;
 }
 section.packContent div.wrapper div.icons div.item p{
     font: 400 1rem 'Poppins';
